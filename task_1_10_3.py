@@ -9,6 +9,9 @@ class Client:
     def get_info(self):
         return f"Клиент <<{self.first_name} {self.last_name}>>. Баланс: {self.balance} руб."
 
+    def get_name(self):
+        return self.last_name
+
 
 if __name__ == '__main__':
     client_1 = Client("Иван", "Петров", 50)

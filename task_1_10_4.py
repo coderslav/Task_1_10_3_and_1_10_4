@@ -7,7 +7,7 @@ guests = []
 class Guests(Client):
 
     def add_to_guests_list(self):
-        guests.append(self)
+        guests.append(self.get_name())
 
     def get_guest_status(self):
         if self in guests:
